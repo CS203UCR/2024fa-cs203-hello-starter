@@ -11,7 +11,7 @@ import re
 def autograde(submission=None, results=None):
     with open(os.path.join(submission, "hello.txt")) as f:
         text = f.read().strip()
-        success = re.match("Hello\s+\w+@ucsd.edu!\sThe\sproduct\sof\syour\sinputs\sis:\s362880", text) is not None
+        success = re.match("Hello\s+\w+@ucr.edu!\sThe\sproduct\sof\syour\sinputs\sis:\s362880", text) is not None
 
         # https://gradescope-autograders.readthedocs.io/en/latest/specs/#output-format
         json.dump(dict(output="The autograder ran.",
